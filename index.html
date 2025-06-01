@@ -2,8 +2,8 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Site com GTM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AB Data</title>
 
     <!-- Google Tag Manager -->
     <script>
@@ -16,6 +16,7 @@
     <!-- End Google Tag Manager -->
 
     <style>
+      /* Reset e estilo geral */
       body {
         font-family: 'Segoe UI', sans-serif;
         margin: 0;
@@ -25,19 +26,52 @@
       header {
         background-color: #343a40;
         color: white;
-        padding: 2rem;
+        padding: 1rem 2rem;
         text-align: center;
       }
+      /* Menu de navegação */
+      nav {
+        background-color: #212529;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+      nav ul li {
+        display: inline;
+      }
+      nav ul li a {
+        display: block;
+        padding: 1rem 1.5rem;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      }
+      nav ul li a:hover,
+      nav ul li a.active {
+        background-color: #4caf50;
+        border-radius: 6px;
+      }
+
       main {
         max-width: 800px;
         margin: 2rem auto;
-        padding: 1rem;
+        padding: 1.5rem;
         background-color: white;
         border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       }
       h1 {
         font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+      h2 {
+        color: #4caf50;
         margin-bottom: 1rem;
       }
       p {
@@ -68,21 +102,23 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <header>
-      <h1>Meu Blog no GitHub Pages</h1>
-      <p>Este site está com o Google Tag Manager instalado! 🎯</p>
+      <h1>AB Data Blog</h1>
+      <p>Seu blog sobre Marketing Science e Dados</p>
     </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
 
     <main>
       <h2>Bem-vindo!</h2>
-      <p>
-        O experimento encontra a validação
-      </p>
-      <p>
-     
-      </p>
-      <p>
-        Veja o projeto no <a href="https://github.com/">GitHub</a>.
-      </p>
+      <p>Este é o blog da AB Data, onde publicamos artigos sobre marketing, ciência de dados e análises para melhorar decisões estratégicas.</p>
+      <p>Explore os conteúdos e aprenda a usar dados para potencializar suas estratégias de marketing!</p>
+      <p>Veja o projeto no <a href="https://github.com/">GitHub</a>.</p>
     </main>
 
     <footer>
